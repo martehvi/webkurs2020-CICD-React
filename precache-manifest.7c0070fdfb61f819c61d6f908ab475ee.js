@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b78b3c35c05146d8daf802c796a9b8fe",
+    "revision": "e0cfb34a8917065704a00a7df5a71d2c",
     "url": "/webkurs2020-CICD-React/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/webkurs2020-CICD-React/static/css/2.0a5b19c0.chunk.css"
   },
   {
-    "revision": "ab071dac660b50725d9d",
+    "revision": "0dd3cc54130d7523e445",
     "url": "/webkurs2020-CICD-React/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/webkurs2020-CICD-React/static/js/2.16ab8709.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ab071dac660b50725d9d",
-    "url": "/webkurs2020-CICD-React/static/js/main.205098a5.chunk.js"
+    "revision": "0dd3cc54130d7523e445",
+    "url": "/webkurs2020-CICD-React/static/js/main.9c63fdd7.chunk.js"
   },
   {
     "revision": "580e99ae8bc13b712167",

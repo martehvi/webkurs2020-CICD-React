@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import Exxxtra from "./Exxxtra"
 
 const styles = {
   width: "100%",
@@ -10,6 +11,7 @@ const styles = {
 
 const MapboxGLMap = () => {
   const [map, setMap] = useState(null);
+  const [backgroundLayerID, setbackgroundLayerID] = useState("streets-v11");
   const mapContainer = useRef(null);
 
   useEffect(() => {
@@ -17,7 +19,7 @@ const MapboxGLMap = () => {
     const initializeMap = ({ setMap, mapContainer }) => {
       const map = new mapboxgl.Map({
         container: mapContainer.current,
-        style: "mapbox://styles/mapbox/streets-v11", // stylesheet location
+        style: "mapbox://styles/mapbox/" + backgroundLayerID, // stylesheet location
         center: [10.408773,63.422091],
         zoom: 10
       });
@@ -29,9 +31,16 @@ const MapboxGLMap = () => {
     };
 
     if (!map) initializeMap({ setMap, mapContainer });
-  }, [map]);
+    if (map) map.setStyle("mapbox://styles/mapbox/" + backgroundLayerID);
+  }, [backgroundLayerID, map]);
 
-  return <div ref={el => (mapContainer.current = el)} style={styles} />;
+  return (
+    <div>
+      <Exxxtra setbackgroundLayerID={setbackgroundLayerID} backgroundLayerID={backgroundLayerID}/>
+      <div ref={el => (mapContainer.current = el)} style={styles} />;
+    </div>
+  )
+    
 };
 
 export default MapboxGLMap;

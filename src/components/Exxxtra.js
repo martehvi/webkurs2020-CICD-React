@@ -15,10 +15,17 @@ const menuStyle = {
     { id: "satellite-v9", name: "Satellite" },
 ];
 
+const marte = [
+    { title: "Hvor kommer jeg fra?", coordinates: [9.6555, 59.1386] },
+    { title: "Hvor har jeg vært?", coordinates: [11.5820, 48.1351]},
+    { title: "Hvor er jeg nå?", coordinates: [10.408773,63.422091]},
+    //{ title: "Hvor vil jeg?", coordinates: [9.6555, 59.1386]},
+];
+
 const Exxxtra = (props) => {
     return (
             <div style={menuStyle}>
-                {backgroundLayers.map((backgroundLayer) => (
+                {/*backgroundLayers.map((backgroundLayer) => (
                     <div key={backgroundLayer.id}>
                         <input
                             id={backgroundLayer.id}
@@ -30,7 +37,15 @@ const Exxxtra = (props) => {
                         />
                         <label>{backgroundLayer.name}</label>
                     </div>
+                ))*/}
+                {marte.map((id) => (
+                    <div>
+                        <button onClick={() => props.setCoordinates(id.coordinates)}>
+                            {id.title}                            
+                        </button>
+                    </div>
                 ))}
+                
             </div>
         )
     

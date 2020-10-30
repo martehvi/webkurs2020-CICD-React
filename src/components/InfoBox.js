@@ -1,8 +1,8 @@
 import React from 'react'
 
 const styles = {
-    height: '100px',
-    width: '10vw',
+    height: '280px',
+    width: '100px',
     padding: '10px',
     textAlign: 'center',
     padding: 100,

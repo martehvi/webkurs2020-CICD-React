@@ -9,11 +9,14 @@ const styles = {
   position: "absolute"
 };
 
-const MapboxGLMap = () => {
+
+const MapboxGLMap = (props) => {
   const [map, setMap] = useState(null);
   const [backgroundLayerID, setbackgroundLayerID] = useState("streets-v11");
   const mapContainer = useRef(null);
-  const [coordinates, setCoordinates] = useState([10.408773,63.422091]);
+  //const [coordinates, setCoordinates] = useState([9.6555, 59.1386]);
+  const [selectedIndex, setIndex] = useState(null);
+
 
   useEffect(() => {
     mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_KEY;
@@ -21,7 +24,7 @@ const MapboxGLMap = () => {
       const map = new mapboxgl.Map({
         container: mapContainer.current,
         style: "mapbox://styles/mapbox/" + backgroundLayerID, // stylesheet location
-        center: coordinates,
+        center: props.coordinates,
         zoom: 10
       });
 
@@ -35,18 +38,13 @@ const MapboxGLMap = () => {
     if (map) {
       map.setStyle("mapbox://styles/mapbox/" + backgroundLayerID);
       // added: when button is clicked in Exxxtra, this will update the coordinates
-      map.setCenter(coordinates);
+      map.setCenter(props.coordinates);
     }
 
-  }, [backgroundLayerID, map, coordinates]);
+  }, [backgroundLayerID, map, props]);
 
   return (
     <div>
-      <Exxxtra 
-        setbackgroundLayerID={setbackgroundLayerID} 
-        backgroundLayerID={backgroundLayerID}
-        setCoordinates={setCoordinates}
-        coordinates={coordinates}/>
       <div ref={el => (mapContainer.current = el)} style={styles} />;
     </div>
   )

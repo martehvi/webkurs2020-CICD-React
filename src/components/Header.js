@@ -11,7 +11,7 @@ const styles = {
 const Header = () => {
     return (
         <div style={styles}>
-            <header>Velkommen</header>
+            <header>Velkommen - til speedintervju m/ KarteMarte</header>
         </div>
     )
 }

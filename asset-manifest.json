@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/webkurs2020-CICD-React/static/css/main.1166440e.chunk.css",
-    "main.js": "/webkurs2020-CICD-React/static/js/main.be5dff8d.chunk.js",
-    "main.js.map": "/webkurs2020-CICD-React/static/js/main.be5dff8d.chunk.js.map",
+    "main.css": "/webkurs2020-CICD-React/static/css/main.69eda509.chunk.css",
+    "main.js": "/webkurs2020-CICD-React/static/js/main.f0379970.chunk.js",
+    "main.js.map": "/webkurs2020-CICD-React/static/js/main.f0379970.chunk.js.map",
     "runtime-main.js": "/webkurs2020-CICD-React/static/js/runtime-main.89e14c0b.js",
     "runtime-main.js.map": "/webkurs2020-CICD-React/static/js/runtime-main.89e14c0b.js.map",
     "static/css/2.0a5b19c0.chunk.css": "/webkurs2020-CICD-React/static/css/2.0a5b19c0.chunk.css",
-    "static/js/2.34d2031a.chunk.js": "/webkurs2020-CICD-React/static/js/2.34d2031a.chunk.js",
-    "static/js/2.34d2031a.chunk.js.map": "/webkurs2020-CICD-React/static/js/2.34d2031a.chunk.js.map",
+    "static/js/2.2fda7025.chunk.js": "/webkurs2020-CICD-React/static/js/2.2fda7025.chunk.js",
+    "static/js/2.2fda7025.chunk.js.map": "/webkurs2020-CICD-React/static/js/2.2fda7025.chunk.js.map",
     "index.html": "/webkurs2020-CICD-React/index.html",
-    "precache-manifest.e421a3d21be801c298ecd6428343d65f.js": "/webkurs2020-CICD-React/precache-manifest.e421a3d21be801c298ecd6428343d65f.js",
+    "precache-manifest.03bdb4ff8f7d7734a1e7124d8fdc2be0.js": "/webkurs2020-CICD-React/precache-manifest.03bdb4ff8f7d7734a1e7124d8fdc2be0.js",
     "service-worker.js": "/webkurs2020-CICD-React/service-worker.js",
     "static/css/2.0a5b19c0.chunk.css.map": "/webkurs2020-CICD-React/static/css/2.0a5b19c0.chunk.css.map",
-    "static/css/main.1166440e.chunk.css.map": "/webkurs2020-CICD-React/static/css/main.1166440e.chunk.css.map",
-    "static/js/2.34d2031a.chunk.js.LICENSE.txt": "/webkurs2020-CICD-React/static/js/2.34d2031a.chunk.js.LICENSE.txt"
+    "static/css/main.69eda509.chunk.css.map": "/webkurs2020-CICD-React/static/css/main.69eda509.chunk.css.map",
+    "static/js/2.2fda7025.chunk.js.LICENSE.txt": "/webkurs2020-CICD-React/static/js/2.2fda7025.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.89e14c0b.js",
     "static/css/2.0a5b19c0.chunk.css",
-    "static/js/2.34d2031a.chunk.js",
-    "static/css/main.1166440e.chunk.css",
-    "static/js/main.be5dff8d.chunk.js"
+    "static/js/2.2fda7025.chunk.js",
+    "static/css/main.69eda509.chunk.css",
+    "static/js/main.f0379970.chunk.js"
   ]
 }
